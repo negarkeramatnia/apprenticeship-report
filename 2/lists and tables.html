@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>favorite movies</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            th,td, table{
+                border-collapse: collapse;
+                border: 1px solid #767676;
+                padding: 15px;
+            }
+            caption{
+                text-align: left;
+                font-size:20px;
+                color: rgb(76, 0, 0);
+            }
+            hr{
+                color: #cecece;
+                height: 0px;
+                width: 100%;
+            }
+            tr:hover {background-color: #fffed4;}
+            li{
+                list-style-type:square;
+            }
+            .li_nested{
+                list-style-type: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: brown;">favorite movies in table:</h1>
+        <table>
+            <caption>Movies: </caption>
+            <colgroup>
+                <col span="1">
+                <col span="1" style="background-color: rgb(224, 224, 224)">
+            </colgroup>
+            <tr style="background-color: antiquewhite; color: brown;">
+                <th>Name </th>
+                <th>Rank </th>
+                <th>Title </th>
+                <th>Year </th>
+                <th>Director </th>
+            </tr>
+            <tr>
+                <td>something 1</td>
+                <td>34</td>
+                <td>Lorem ipsum fdbgfdgfhftfffff1</td>
+                <td>2015</td>
+                <td>lorem ipsum 1</td>
+            </tr>
+            <tr>
+                <td>something 1</td>
+                <td>34</td>
+                <td>Lorem ipsthsfrstrghsfrgttsrhum fffff1</td>
+                <td>2016</td>
+                <td>lorem ipsum 1</td>
+            </tr>
+            <tr>
+                <td>something 1</td>
+                <td>34</td>
+                <td>Lorem ipfghfdgtrsdfsum fffff1</td>
+                <td>2017</td>
+                <td>lorem ipsum 1</td>
+            </tr>
+            <tr>
+                <td>something 1</td>
+                <td>34</td>
+                <td>Lorem ipsadfshszdthgdhum fffff1</td>
+                <td>2018</td>
+                <td>lorem ipsum 1</td>
+            </tr>
+        </table>
+        <br><hr>
+        <!-- nested list for a simple recipe -->
+        <h4>How to make low-sugar chocolate pancakes:</h4>
+        <h5>Ingredients for one person:</h5>
+        <ul>
+            <li>Eggs: 1</li>
+            <li>Flour: 1/3 cup</li>
+            <li>Cocoa powder: 1 to 2 tablespoons</li>
+                <ul>
+                    <li class="li_nested"> -it must be bitter and unsweetened</li>
+                </ul>
+            <li>Sugar: 1 to 2 teaspoons</li>
+                <ul>
+                    <li class="li_nested">-depending on your taste</li>
+                </ul>
+            <li>Milk: about 1/3 to 1/2 cup</li>
+                <ul>
+                    <li class="li_nested">-depending on the consistency</li>
+                </ul>
+            <li>Baking powder: 1/2 teaspoon</li>
+            <li>Liquid oil or melted butter: 1 tablespoon</li>
+            <li>Vanilla: tip of a teaspoo</li>
+                <ul>
+                    <li class="li_nested">--optional, for better flavor</li>
+                </ul>
+        </ul>
+    </body>
+</html>
