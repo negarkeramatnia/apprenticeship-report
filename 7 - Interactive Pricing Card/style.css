@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nata Sans", sans-serif;
+}
+body{
+    background-color: #e6e0eb;
+    text-align: center;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.Interactive-Pricing{
+    background-color: #ffffff;
+    width: 330px;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-top{
+    background-color: #3f17ffb5;
+    color: #fff;
+    padding: 1vw 0;
+}
+.card-top h2{
+    font-weight: 600;
+}
+.card-middle h4::before{
+    font-family: 'Material Icons';
+    content: 'check';
+    color: #28a745;
+    padding: 0 10px;
+}
+.card-middle h4{
+    border-bottom: 1px solid #d6d6d6;
+    font-weight: 200;
+    color: #343434;
+    padding: 8px 0;
+}
+.card-top h1::after{
+    content: '/mo';
+    font-size: 0.6em;
+    font-weight: 200;
+    color: #ffffff;
+}
+.card-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh 0;
+}
+a{
+    text-decoration: none;
+    color: #929292;
+}
+.card-buttons button{
+    width: 130px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #3f17ffb5;
+    height: 47px;
+    font-weight: 800;
+}
+.card-buttons button a{
+    color: #fff;
+}
+.card-buttons a{
+    margin-top: 3vh;
+}
+.card-link:hover{
+    border-bottom: 1px solid #3f17ffb5;
+}
+.card-buttons button:hover a{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-weight: 800;
+    color: #929292;
+}
+.card-buttons button:hover{
+    background-color: #fff;
+    border: 2px dashed #3f17ffb5;
+}
+::selection{
+    background-color: #faebd7;
+}
