@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nata Sans", sans-serif;
+}
+body{
+    background-color: #90b5b552;
+}
+@keyframes html {
+  0%   {width: 0%;}
+  25%  {width: 25%;}
+  50%  {width: 50%;}
+  75%  {width: 75%;}
+  90% {width: 90%;}
+}
+@keyframes css {
+  0%   {width: 0%;}
+  25%  {width: 25%;}
+  50%  {width: 50%;}
+  75%  {width: 75%;}
+  80% {width: 80%;}
+}
+@keyframes js {
+  0%   {width: 0%;}
+  25%  {width: 25%;}
+  50%  {width: 50%;}
+  65%  {width: 65%;}
+}
+.container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.skill-card{
+    width: 505px;
+    height: 360px;
+    background-color: #f5fdff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #85a6aec5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.skill-card:hover{
+    box-shadow: 0px 0px 50px #85a6aec5;
+    transform: translate(0px, -10px);
+    transition-timing-function: ease-in;
+    transition-duration: 300ms;
+}
+.card-title{
+    font-size: 24px;
+    font-weight: 800;
+}
+.skills{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.skill-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6vh;
+    width: 100%;
+}
+.persent-line-cont{
+    width: 453px;
+    height: 16px;
+    background-color: #dadada9c;
+    border-radius: 80px;
+}
+.persent-line.html{
+    width: 90%;
+    height: 16px;
+    background: #42ffff;
+    background: linear-gradient(90deg,rgba(66, 255, 255, 1) 1%, rgba(8, 229, 229, 1) 57%, rgba(0, 171, 171, 1) 100%);
+    border-radius: 80px;
+    animation-name: html;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+}
+.persent-line.css{
+    width: 80%;
+    height: 16px;
+    background: #42ffff;
+    background: linear-gradient(90deg,rgba(66, 255, 255, 1) 1%, rgba(8, 229, 229, 1) 57%, rgba(0, 171, 171, 1) 100%);
+    border-radius: 80px;
+    animation-name: css;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+}
+.persent-line.js{
+    width: 65%;
+    height: 16px;
+    background: #42ffff;
+    background: linear-gradient(90deg,rgba(66, 255, 255, 1) 1%, rgba(8, 229, 229, 1) 57%, rgba(0, 171, 171, 1) 100%);
+    border-radius: 80px;
+    animation-name: js;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+}
