@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <link href="./vazir-font-v16.1.0/Vazir-Bold.eot" rel="stylesheet" type="text/css" />
         <link href="style.css" rel="stylesheet">
     </head>
@@ -20,9 +22,18 @@
                         <form action="#" class="h-searchbar-form">
                             <input type="text" class="h-searchbar-input" placeholder="نام کالا، برند و یا دسته مورد نظر خود را جستجو کنید…">
                             <div class="search-btn">
-                                <div class="search-filter">همه دسته ها</div>
+                                <select class="list-filter">
+                                    <option>همه دسته ها</option>
+                                    <option>کالای دیجیتال</option>
+                                    <option>آرایشی بهداشتی</option>
+                                    <option>ابزاری اداری</option>
+                                    <option>مد پوشاک</option>
+                                    <option>خانه آشپزخانه</option>
+                                    <option>لوازم تحریر و هنر</option>
+                                    <option>کودک و نوزاد</option>
+                                </select>
                                 <button class="btn-search-icon" type="submit">
-                                    <img src="search.png" alt="جستجو">
+                                    <span class="material-symbols-outlined">search</span>
                                 </button>
                             </div>
                         </form>
@@ -32,8 +43,13 @@
                 <div class="h-left">
                     <div class="nav-account">
                         <a href="#" class="title-account">حساب کاربری</a>
-                        <div class="img-account">
-                            <a href="#"><img src="mine-svgrepo-com.svg" alt="حساب کاربری" height="45" width="45"></a>
+                        <a href="#" class="icon-account"><span class="material-symbols-outlined">account_circle</span></a>
+
+                        <div class="nav-account-tooltip">
+                            <span class="tooltip-text one">پنل کاربری</span>
+                            <span class="tooltip-text two">سفارشات من</span>
+                            <span class="tooltip-text three">تنظیمات</span>
+                            <span class="tooltip-text four">خروج</span>
                         </div>
                     </div>
                 </div>
@@ -74,15 +90,11 @@
                 </div>
                 <div class="h-nav-menu-left">
                     <div class="cart-basket-cart">
-                        <span class="icon-cart">
-                            <a href="#">
-                                <img src="cart-logo-png-892244.png">
-                            </a>
-                        </span>
+                        <span class="icon-cart"></span>
                         <div class="shopping-cart">
                             <div class="shopping-cart1">
                                 <span class="title-cart">سبد خرید</span>
-                                <span class="price-cart">25000000</span>
+                                <span class="price-cart">25000000 تومان</span>
                             </div>
                             <div>
                                 <span class="count-cart"> 2 عدد</span>
@@ -91,7 +103,7 @@
                     </div>
                     <span class="like-cart">
                         <a href="#">
-                            <img src="like-heart-round-icon.svg">
+                            <i class="fa fa-heart"></i>
                         </a>
                     </span>
                 </div>
