@@ -609,8 +609,7 @@ li{
 
 /* footer */
 footer{
-    margin:0 -3%;
-    /* background-color: #e5e5e5; */
+    margin: 0 -3%; 
 }
 .footer-top{
     display: flex;
