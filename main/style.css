@@ -1,16 +1,56 @@
+/* remove default styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body{
     font-family: 'Vazirmatn';
-    margin: 0 3%;
     background-color: #fafafa;
     box-sizing: border-box;
+    line-height: 2rem;
 }
 a{
     color: #424242;
-}
-.h-main{
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 30px 30px 30px;
 }
 .header-searchbar{
     background-color: #efefef;
@@ -19,9 +59,7 @@ a{
     display: flex;
 }
 .h-searchbar-input{
-    width: 21vw;
     border: none;
-    margin: 0 15px;
     background-color: #efefef;
 }
 .h-searchbar-input:focus{
@@ -42,22 +80,6 @@ li{
 .li-photos{
     margin-left: 2px;
 }
-.h-searchbar-form{
-    display: flex;
-    flex-direction: row;
-}
-.h-right{
-    display: flex;
-    flex-direction: row;
-}
-.header-logo{
-    margin-left: 25px;
-}
-.search-btn{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
 .search-filter{
     display: flex;
@@ -76,8 +98,6 @@ li{
     cursor: pointer;
     border: none;
     background-color: transparent;
-    height: 100%;
-    font-family: 'Vazirmatn';
 }
 
 .btn-search-icon{
@@ -107,7 +127,7 @@ li{
     overflow: hidden;
     border: 1px solid #c7c7c7;
     height: 122px;
-    top: 40px;
+    top: 53px;
     display: none;
 }
 .nav-account-tooltip .tooltip-text{
@@ -140,8 +160,8 @@ li{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 40px -46px 24px -46px;
     background-color: #ececec;
+    padding: 0;
 }
 .h-nav-menu-right{
     display: flex;
@@ -156,8 +176,10 @@ li{
 .nav-menu-item{
     display: flex;
     align-items: center;
-    padding: 0 9px;
     position: relative;
+}
+.navbar-collapse{
+    flex-grow: 0;
 }
 @-webkit-keyframes scale-up-hor-center {
   0% {
@@ -186,7 +208,7 @@ li{
 .bottom-border{
     border-bottom: 2px solid #006adb;
     width: 86%;
-    height: 100%;
+    height: 4rem;
     position: absolute;
     transform: scaleX(0);
 }
@@ -205,10 +227,10 @@ li{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 20vw;
+    height: 23vw;
     display: none;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    padding-left: 30px;
+    padding:1.5rem 1.5rem;
 }
 .nav-menu-ul > .nav-menu-item:nth-child(5) .sub-menu{
     right: -26rem;
@@ -254,7 +276,7 @@ li{
     display: grid;
 }
 .sub-menu.stationery{
-    height: 11vw;
+    height: 15vw;
     line-height: 2rem;
     display: none;
     padding-left: 0;
@@ -274,9 +296,9 @@ li{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
     left: -12rem;
-    right: 17rem;
+    right: 15rem;
     top: 6rem;
-    height: 11rem;
+    height: 13rem;
 }
 
 
@@ -530,8 +552,6 @@ li{
 /* newest box */
 .newest-products-container{
     background-image: url(bg-cover.jpg);
-    margin-left: -3%;
-    margin-right: -3%;
     background-repeat: no-repeat;
     padding-bottom: 4vw;
 }
@@ -608,9 +628,6 @@ li{
 }
 
 /* footer */
-footer{
-    margin: 0 -3%; 
-}
 .footer-top{
     display: flex;
     align-items: center;
