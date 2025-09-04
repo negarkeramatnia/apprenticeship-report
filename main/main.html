@@ -303,13 +303,44 @@
     </header>
 
     <main>
-        <section class="upper-container row g-4 m-3">
-            <a href="#" class="top-slider-photo col-9 col-lg-9"><img src="sm-1.jpg" alt="بزن بریم"></a>
-            <a href="#" class="top-ad col-3 col-lg-3"><img src="a-3.jpg" alt="ورود به دیجی کالا"></a>
+        <section class="container">
+            <div class="row g-4 m-3">
+                <a href="#" class="top-slider-photo col-9 col-lg-9">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner rounded-2 shadow">
+                            <div class="carousel-item active">
+                                <img src="sm-1.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="sm-2.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="sm-5.jpg" class="d-block w-100">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </a>
+                <a href="#" class="col-3 col-lg-3 d-flex align-items-center">
+                    <img src="a-3.jpg" alt="ورود به دیجی کالا" class="rounded-2 shadow">
+                </a>
+            </div>
         </section>
 
-        <section class="middle-container">
-            <div class="instant-offer">
+        <section class="container-fluid d-flex p-5">
+            <div class="instant-offer flex-grow-1 mx-2 rounded-4 shadow">
                 <span class="instant-offer-title">پیشنهاد لحظه‌ای</span>
                 <a href="#" class="instant-offer-link">
                     <img src="as-1.jpg">
@@ -317,7 +348,7 @@
                 </a>
             </div>
 
-            <div class="instant-offer-bigger">
+            <div class="instant-offer-bigger flex-fill mx-2 rounded-4 shadow">
                 <a href="#" class="instant-bigger-link">
                     <img src="as-1.jpg">
                     <div class="instant-bigger-details">
@@ -355,26 +386,28 @@
             </div>
         </section>
 
-        <section class="last-container row g-0">
-            <div class="items-of-categories col">
-                <a href="#">
-                    <img src="a-4.jpg">
-                </a>
-            </div>
-            <div class="items-of-categories col">
-                <a href="#">
-                    <img src="a-5.jpg">
-                </a>
-            </div>
-            <div class="items-of-categories col">
-                <a href="#">
-                    <img src="a-6.jpg">
-                </a>
-            </div>
-            <div class="items-of-categories col">
-                <a href="#">
-                    <img src="a-7.jpg">
-                </a>
+        <section class="container-fluid d-flex p-5">
+            <div class="row g-0">
+                <div class="items-of-categories col">
+                    <a href="#">
+                        <img src="a-4.jpg">
+                    </a>
+                </div>
+                <div class="items-of-categories col">
+                    <a href="#">
+                        <img src="a-5.jpg">
+                    </a>
+                </div>
+                <div class="items-of-categories col">
+                    <a href="#">
+                        <img src="a-6.jpg">
+                    </a>
+                </div>
+                <div class="items-of-categories col">
+                    <a href="#">
+                        <img src="a-7.jpg">
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -462,9 +495,9 @@
 
         </section>
 
-        <section class="adplacement-container-row">
-            <a href="#"><img src="a-9.jpg" class="adplacment1"></a>
-            <a href="#"><img src="a-11.jpg" class="adplacment2"></a>
+        <section class="container-fluid d-flex px-5 py-5">
+            <a href="#" class="mx-2"><img src="a-9.jpg" class="w-100 rounded-2 shadow"></a>
+            <a href="#" class="mx-2"><img src="a-11.jpg" class="w-100 rounded-2 shadow"></a>
         </section>
 
         <section class="slider-product">

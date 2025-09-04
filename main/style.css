@@ -159,7 +159,6 @@ a {
 .h-searchbar-input {
     width: 24vw;
     border: none;
-    margin: 0 15px;
     background-color: #efefef;
 }
 
@@ -226,8 +225,6 @@ li {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    height: 100%;
-    font-family: 'Vazirmatn';
 }
 
 .btn-search-icon {
@@ -258,8 +255,8 @@ li {
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #c7c7c7;
-    height: 122px;
-    top: 40px;
+    height: 112px;
+    top: 38px;
     display: none;
 }
 
@@ -299,8 +296,8 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 40px -46px 24px -46px;
     background-color: #ececec;
+    padding: 0;
 }
 
 .h-nav-menu-right {
@@ -318,8 +315,8 @@ li {
 .nav-menu-item {
     display: flex;
     align-items: center;
-    padding: 0 9px;
     position: relative;
+    margin: 0 3px;
 }
 
 @-webkit-keyframes scale-up-hor-center {
@@ -352,7 +349,7 @@ li {
 .bottom-border {
     border-bottom: 2px solid #006adb;
     width: 86%;
-    height: 100%;
+    height: 4rem;
     position: absolute;
     transform: scaleX(0);
 }
@@ -461,6 +458,7 @@ li {
     right: 262px;
     top: 6rem;
     height: 13rem;
+    height: 13rem;
 }
 
 .h-nav-menu-left {
@@ -561,18 +559,6 @@ li {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.top-ad {
-    grid-area: 1 / 5 / 6 / 6;
-}
-
-.top-ad img {
-    box-shadow: 5px 10px 18px #c2c2c2;
-}
-
-.top-slider-photo {
-    grid-area: 1 / 1 / 6 / 5;
-}
-
 .top-slider-photo img {
     max-width: 100%;
     max-height: 100%;
@@ -590,11 +576,8 @@ li {
 }
 
 .instant-offer {
-    grid-area: 1 / 1 / 2 / 2;
     border: 1px solid #c7c7c7;
     background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 5px 10px 18px #c2c2c2;
     display: flex;
     flex-direction: column;
 }
@@ -620,9 +603,6 @@ li {
 .instant-offer-bigger {
     border: 1px solid #c7c7c7;
     background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 5px 10px 18px #c2c2c2;
-    grid-area: 1 / 2 / 2 / 6;
 }
 
 .instant-offer-bigger img {
@@ -663,17 +643,12 @@ li {
     margin: 0.5vw;
 }
 
-.last-container {
-    display: flex;
-    gap: 2vw;
-    margin: 40px 30px 30px 30px;
-}
-
 .items-of-categories {
     border: 1px solid rgb(209, 209, 209);
     border-radius: 20px;
     box-shadow: 5px 10px 18px #c7c7c7;
     background-color: #ffffff;
+    margin: 0.5vw;
 }
 
 .items-of-categories a img {
