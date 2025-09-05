@@ -178,8 +178,8 @@ a {
     display: flex;
 }
 
-li {
-    list-style-type: none;
+.dropdown-item {
+    text-align: start;
 }
 
 .li-photos {
@@ -298,11 +298,6 @@ li {
     justify-content: space-between;
     background-color: #ececec;
     padding: 0;
-}
-
-.h-nav-menu-right {
-    display: flex;
-    align-items: center;
 }
 
 .nav-menu-ul {
@@ -468,10 +463,11 @@ li {
     margin-left: 45px;
 }
 
-.nav-link-menu::after {
+
+/* .nav-link-menu::after {
     font-family: 'Material Icons';
     content: 'keyboard_arrow_down';
-}
+} */
 
 .nav-link-menu.not:after {
     content: '';
@@ -480,6 +476,7 @@ li {
 .nav-link-menu {
     display: flex;
     align-items: center;
+    gap: 2px;
 }
 
 .cart-basket-cart {

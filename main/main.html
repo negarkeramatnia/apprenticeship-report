@@ -17,11 +17,13 @@
 <body>
     <header>
         <div class="container d-flex justify-content-between my-4">
-            <div class="h-right">
-                <div class="header-logo">
+
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-md-2">
                     <a href="#"><img src="logo.png" alt="کالامارکت"></a>
                 </div>
-                <div class="header-searchbar">
+
+                <div class="header-searchbar col-md-9">
                     <form action="#" class="h-searchbar-form">
                         <input type="text" class="h-searchbar-input" placeholder="نام کالا، برند و یا دسته مورد نظر خود را جستجو کنید…">
                         <div class="search-btn">
@@ -41,272 +43,265 @@
                         </div>
                     </form>
                 </div>
+
             </div>
 
-            <div class="h-left">
-                <div class="nav-account">
-                    <a href="#" class="title-account">حساب کاربری</a>
-                    <a href="#" class="icon-account"><span class="material-symbols-outlined">account_circle</span></a>
+            <div class="col-md-3 d-flex justify-content-end">
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+                        <span class="material-symbols-outlined me-2">account_circle</span>
+                        <span class="mx-2">حساب کاربری</span>
+                    </a>
 
-                    <div class="nav-account-tooltip">
-                        <span class="tooltip-text one">پنل کاربری</span>
-                        <span class="tooltip-text two">سفارشات من</span>
-                        <span class="tooltip-text three">تنظیمات</span>
-                        <span class="tooltip-text four">خروج</span>
-                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">پنل کاربری</a></li>
+                        <li><a class="dropdown-item" href="#">سفارشات من</a></li>
+                        <li><a class="dropdown-item" href="#">تنظیمات</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">خروج</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <nav class="container-fluid d-flex justify-content-between">
-            <div class="h-nav-menu-right">
-                <ul class="nav-menu-ul">
-                    <li class="nav-menu-item">
-                        <img src="smartphone.png" class="li-photos" width="22px">
-                        <a href="#" class="nav-link-menu">کالای دیجیتال</a>
-                        <span class="bottom-border"></span>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container-fluid">
 
-                        <ul class="sub-menu">
-                            <li class="sub-menu-li title">
-                                <h4 class="title1"><a href="#">موبایل</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">اپل</a></li>
-                                    <li class="sub-menu-link"><a href="#">سامسونگ</a></li>
-                                    <li class="sub-menu-link"><a href="#">نوکیا</a></li>
-                                    <li class="sub-menu-link"><a href="#">ایسوس</a></li>
-                                    <li class="sub-menu-link"><a href="#">هواوی</a></li>
-                                    <li class="sub-menu-link"><a href="#">الجی</a></li>
-                                    <li class="sub-menu-link"><a href="#">اچ تی سی</a></li>
-                                    <li class="sub-menu-link"><a href="#">سونی</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-li title">
-                                <h4 class="title2"><a href="#">تبلت و کتابخوان</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">اپل</a></li>
-                                    <li class="sub-menu-link"><a href="#">سامسونگ</a></li>
-                                    <li class="sub-menu-link"><a href="#">نوکیا</a></li>
-                                    <li class="sub-menu-link"><a href="#">ایسوس</a></li>
-                                    <li class="sub-menu-link"><a href="#">هواوی</a></li>
-                                    <li class="sub-menu-link"><a href="#">الجی</a></li>
-                                    <li class="sub-menu-link"><a href="#">ایسر</a></li>
-                                    <li class="sub-menu-link"><a href="#">سونی</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-li title">
-                                <h4 class="title3"><a href="#">کامپیوتر و تجهیزات جانبی</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">هارددیسک</a></li>
-                                    <li class="sub-menu-link"><a href="#">ماوس</a></li>
-                                    <li class="sub-menu-link"><a href="#">کیبورد</a></li>
-                                    <li class="sub-menu-link"><a href="#">نمایشگر</a></li>
-                                    <li class="sub-menu-link"><a href="#">پردازنده</a></li>
-                                    <li class="sub-menu-link"><a href="#">کارت گرافیک</a></li>
-                                    <li class="sub-menu-link"><a href="#">مادربرد</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-li title">
-                                <h4 class="title1"><a href="#">دوربین</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">دوربین عکاسی</a></li>
-                                    <li class="sub-menu-link"><a href="#">دوربین فیلمبرداری</a></li>
-                                    <li class="sub-menu-link"><a href="#">تلسکوپ</a></li>
-                                    <li class="sub-menu-link"><a href="#">میکروسکوپ وذره بین</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-image">
-                                <img src="digital.png">
-                            </li>
-                        </ul>
-                    </li>
+                <!-- Hamburger button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <li class="nav-menu-item">
-                        <img src="makeup.png" class="li-photos" width="22px">
-                        <a href="#" class="nav-link-menu">آرایشی و بهداشتی</a>
-                        <span class="bottom-border"></span>
+                <!-- collapses on mobile -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
 
-                        <ul class="sub-menu">
-                            <li class="sub-menu-li title">
-                                <h4 class="title1"><a href="#">لوازم آرایشی</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">آرایش چشم و ابرو</a></li>
-                                    <li class="sub-menu-link"><a href="#">آرایش لب</a></li>
-                                    <li class="sub-menu-link"><a href="#">آرایش صورت</a></li>
-                                    <li class="sub-menu-link"><a href="#">تجهیزات جانبی آرایش</a></li>
-                                    <li class="sub-menu-link"><a href="#">سنگ پا و زیبایی ناخن</a></li>
-                                    <li class="sub-menu-link"><a href="#">مواد آرایش مو</a></li>
-                                    <li class="sub-menu-link"><a href="#">شامپو و مراقبت مو</a></li>
-                                    <li class="sub-menu-link"><a href="#">کرم و مراقبت پوست</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-li title">
-                                <h4 class="title2"><a href="#">لوازم شخصی برقی</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">ماشین اصلاح صورت</a></li>
-                                    <li class="sub-menu-link"><a href="#">ماشین اصلاح سر</a></li>
-                                    <li class="sub-menu-link"><a href="#">سشوار</a></li>
-                                    <li class="sub-menu-link"><a href="#">اصلاح بدن آقایان</a></li>
-                                    <li class="sub-menu-link"><a href="#">اصلاح موی گوش،بینی و ابرو</a></li>
-                                    <li class="sub-menu-link"><a href="#">برس پاکسازی</a></li>
-                                    <li class="sub-menu-link"><a href="#">اتو مو و حالت دهنده</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-li title">
-                                <h4 class="title3"><a href="#">لوازم بهداشتی</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">کرم و مراقبت پوست</a></li>
-                                    <li class="sub-menu-link"><a href="#">شامپو و مراقبت مو</a></li>
-                                    <li class="sub-menu-link"><a href="#">بهداشت دهان و دندان</a></li>
-                                    <li class="sub-menu-link"><a href="#">بهداشت و مراقبت بدن</a></li>
-                                    <li class="sub-menu-link"><a href="#">ضد تعریق</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-li title">
-                                <h4 class="title1"><a href="#">ابزارسلامت و طبی</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">مچ بند و ساعت هوشمند</a></li>
-                                    <li class="sub-menu-link"><a href="#">ترازو</a></li>
-                                    <li class="sub-menu-link"><a href="#">کالای خواب و استراحت طبی</a></li>
-                                    <li class="sub-menu-link"><a href="#">تست قند خون</a></li>
-                                    <li class="sub-menu-link"><a href="#">ابزار مراقبت پا</a></li>
-                                    <li class="sub-menu-link"><a href="#">فشارسنج</a></li>
-                                    <li class="sub-menu-link"><a href="#">تب سنج</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-image">
-                                <img src="cosmetic.png">
-                            </li>
-                        </ul>
-                    </li>
+                    <ul class="navbar-nav">
 
-                    <li class="nav-menu-item">
-                        <img src="print.png" class="li-photos" width="22px">
-                        <a href="#" class="nav-link-menu not">ابزار و اداری</a>
-                        <span class="bottom-border"></span>
-                    </li>
-                    <li class="nav-menu-item">
-                        <img src="suit.png" class="li-photos" width="22px">
-                        <a href="#" class="nav-link-menu not">مد و پوشاک</a>
-                        <span class="bottom-border"></span>
-                    </li>
-                    <li class="nav-menu-item">
-                        <img src="home.png" alt="" class="li-photos" width="22px">
-                        <a href="#" class="nav-link-menu">خانه و آشپزخانه</a>
-                        <span class="bottom-border"></span>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle nav-link-menu" href="#" data-bs-toggle="dropdown">
+                                <img src="smartphone.png" width="22px"> کالای دیجیتال
+                            </a>
 
-                        <ul class="sub-menu">
-                            <li class="sub-menu-li title">
-                                <h4 class="title2"><a href="#">لوازم شخصی برقی</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">ماشین اصلاح صورت</a></li>
-                                    <li class="sub-menu-link"><a href="#">ماشین اصلاح سر</a></li>
-                                    <li class="sub-menu-link"><a href="#">سشوار</a></li>
-                                    <li class="sub-menu-link"><a href="#">اصلاح بدن آقایان</a></li>
-                                    <li class="sub-menu-link"><a href="#">اصلاح موی گوش،بینی و ابرو</a></li>
-                                    <li class="sub-menu-link"><a href="#">برس پاکسازی</a></li>
-                                    <li class="sub-menu-link"><a href="#">اتو مو و حالت دهنده</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-li title">
-                                <h4 class="title3"><a href="#">لوازم بهداشتی</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">کرم و مراقبت پوست</a></li>
-                                    <li class="sub-menu-link"><a href="#">شامپو و مراقبت مو</a></li>
-                                    <li class="sub-menu-link"><a href="#">بهداشت دهان و دندان</a></li>
-                                    <li class="sub-menu-link"><a href="#">بهداشت و مراقبت بدن</a></li>
-                                    <li class="sub-menu-link"><a href="#">ضد تعریق</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-li title">
-                                <h4 class="title1"><a href="#">ابزارسلامت و طبی</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">مچ بند و ساعت هوشمند</a></li>
-                                    <li class="sub-menu-link"><a href="#">ترازو</a></li>
-                                    <li class="sub-menu-link"><a href="#">کالای خواب و استراحت طبی</a></li>
-                                    <li class="sub-menu-link"><a href="#">تست قند خون</a></li>
-                                    <li class="sub-menu-link"><a href="#">ابزار مراقبت پا</a></li>
-                                    <li class="sub-menu-link"><a href="#">فشارسنج</a></li>
-                                    <li class="sub-menu-link"><a href="#">تب سنج</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-li title">
-                                <h4 class="title1"><a href="#">ابزارسلامت و طبی</a></h4>
-                                <ul class="sub-menu-links">
-                                    <li class="sub-menu-link"><a href="#">مچ بند و ساعت هوشمند</a></li>
-                                    <li class="sub-menu-link"><a href="#">ترازو</a></li>
-                                    <li class="sub-menu-link"><a href="#">کالای خواب و استراحت طبی</a></li>
-                                    <li class="sub-menu-link"><a href="#">تست قند خون</a></li>
-                                    <li class="sub-menu-link"><a href="#">ابزار مراقبت پا</a></li>
-                                    <li class="sub-menu-link"><a href="#">فشارسنج</a></li>
-                                    <li class="sub-menu-link"><a href="#">تب سنج</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-image">
-                                <img src="kitchen.png">
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-menu-item">
-                        <img src="edit.png" class="li-photos" width="22px">
-                        <a href="#" class="nav-link-menu">لوازم تحریر و هنر</a>
-                        <span class="bottom-border"></span>
-
-                        <ul class="sub-menu stationery">
-                            <li class="sub-menu-li title">
-                                <ul class="sub-menu-links station">
-                                    <li class="sub-menu-link"><a href="#">کتاب و مجله</a></li>
-                                    <li class="sub-menu-link"><a href="#">کتاب صوتی</a></li>
-                                    <li class="sub-menu-link"><a href="#">محتوای آموزشی</a></li>
-                                    <li class="sub-menu-link has-nested"><a href="#">لوازم التحریر</a>
-                                        <ul class="sub-menu station">
-                                            <li class="sub-menu-link"><a href="#">چراغ مطالعه</a></li>
-                                            <li class="sub-menu-link"><a href="#">نوشت افزار</a></li>
-                                            <li class="sub-menu-link"><a href="#">دفتر و کاغذ</a></li>
-                                            <li class="sub-menu-link"><a href="#">میزتحریر</a></li>
-                                            <li class="sub-menu-link"><a href="#">آلبوم عکس</a></li>
+                            <div class="dropdown-menu mega-menu p-4 dropdown-menu-end">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-primary dropdown-item p-1">موبایل</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">اپل</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">سامسونگ</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">نوکیا</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">اپل</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">سامسونگ</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">نوکیا</a></li>
                                         </ul>
-                                    </li>
-                                    <li class="sub-menu-link"><a href="#">نرم افزار</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-primary dropdown-item p-1">تبلت و کتابخوان</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">اپل</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">سامسونگ</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">اپل</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">سامسونگ</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-primary dropdown-item p-1">کامپیوتر</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">هارددیسک</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">ماوس</a></li>
+                                            <li><a href="#" class="dropdown-item p-1">ماوس</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="digital.png" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
 
-                    <li class="nav-menu-item">
-                        <img src="child.png" class="li-photos" width="22px">
-                        <a href="#" class="nav-link-menu not">کودک و نوزاد</a>
-                        <span class="bottom-border"></span>
-                    </li>
-                </ul>
-            </div>
-            <div class="h-nav-menu-left">
-                <div class="cart-basket-cart">
-                    <span class="icon-cart"></span>
-                    <div class="shopping-cart">
-                        <div class="shopping-cart1">
-                            <span class="title-cart">سبد خرید</span>
-                            <span class="price-cart">25000000 تومان</span>
-                        </div>
-                        <div>
-                            <span class="count-cart"> 2 عدد</span>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle nav-link-menu" href="#" data-bs-toggle="dropdown">
+                                <img src="makeup.png" width="22px"> آرایشی و بهداشتی
+                            </a>
+                            <div class="dropdown-menu mega-menu p-4 dropdown-menu-end">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-primary dropdown-item p-1">لوازم آرایشی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">آرایش چشم و ابرو</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">آرایش لب</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">آرایش صورت</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">تجهیزات جانبی آرایش</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">سنگ پا و زیبایی ناخن</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">مواد آرایش مو</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">شامپو و مراقبت مو</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">کرم و مراقبت پوست</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-primary dropdown-item p-1">لوازم شخصی برقی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">ماشین اصلاح صورت</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">ماشین اصلاح سر</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">سشوار</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">اصلاح بدن آقایان</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">اصلاح موی گوش،بینی و ابرو</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">برس پاکسازی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">اتو مو و حالت دهنده</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-primary dropdown-item p-1">لوازم بهداشتی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">کرم و مراقبت پوست</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">شامپو و مراقبت مو</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">بهداشت دهان و دندان</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">بهداشت و مراقبت بدن</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">ضد تعریق</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-primary dropdown-item p-1">ابزارسلامت و طبی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">مچ بند و ساعت هوشمند</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">ترازو</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">کالای خواب و استراحت طبی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">تست قند خون</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">ابزار مراقبت پا</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">فشارسنج</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">تب سنج</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <img src="cosmetic.png" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-menu" href="#">
+                                <img src="print.png" width="22px"> ابزار و اداری
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-menu" href="#">
+                                <img src="suit.png" width="22px"> مد و پوشاک
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle nav-link-menu" href="#" data-bs-toggle="dropdown">
+                                <img src="home.png" width="22px"> خانه و آشپزخانه
+                            </a>
+                            <div class="dropdown-menu mega-menu p-4 dropdown-menu-end">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-primary dropdown-item p-1">لوازم شخصی برقی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">ماشین اصلاح صورت</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">ماشین اصلاح سر</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">سشوار</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">اصلاح بدن آقایان</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">اصلاح موی گوش،بینی و ابرو</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">برس پاکسازی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">اتو مو و حالت دهنده</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-primary dropdown-item p-1">لوازم شخصی برقی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">کرم و مراقبت پوست</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">شامپو و مراقبت مو</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">بهداشت دهان و دندان</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">بهداشت و مراقبت بدن</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">ضد تعریق</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-primary dropdown-item p-1">لوازم بهداشتی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">کرم و مراقبت پوست</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">شامپو و مراقبت مو</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">بهداشت دهان و دندان</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">بهداشت و مراقبت بدن</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">ضد تعریق</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="text-primary dropdown-item p-1">ابزارسلامت و طبی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">مچ بند و ساعت هوشمند</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">ترازو</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">کالای خواب و استراحت طبی</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">تست قند خون</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">ابزار مراقبت پا</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">فشارسنج</a></li>
+                                            <li class="dropdown-item p-1"><a href="#">تب سنج</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <img src="kitchen.png" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link-menu" href="#" data-bs-toggle="dropdown">
+                                <img src="edit.png" width="22px"> لوازم تحریر و هنر
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">کتاب و مجله</a></li>
+                                <li><a class="dropdown-item" href="#">کتاب و مجله</a></li>
+                                <li><a class="dropdown-item" href="#">چراغ مطالعه</a></li>
+                                <li><a class="dropdown-item" href="#">نوشت افزار</a></li>
+                                <li><a class="dropdown-item" href="#">کتاب و مجله</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link nav-link-menu">
+                                <img src="child.png" class="li-photos" width="22px">کودک و نوزاد
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="h-nav-menu-left">
+                    <div class="cart-basket-cart">
+                        <span class="icon-cart"></span>
+                        <div class="shopping-cart">
+                            <div class="shopping-cart1">
+                                <span class="title-cart">سبد خرید</span>
+                                <span class="price-cart">25000000 تومان</span>
+                            </div>
+                            <div>
+                                <span class="count-cart"> 2 عدد</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <span class="like-cart">
+                    <span class="like-cart">
                         <a href="#">
                             <i class="fa fa-heart"></i>
                         </a>
                     </span>
+                </div>
+
             </div>
         </nav>
+
     </header>
 
     <main>
         <section class="container">
             <div class="row g-4 m-3">
                 <a href="#" class="top-slider-photo col-9 col-lg-9">
-                    <div id="carouselExampleIndicators" class="carousel slide">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
